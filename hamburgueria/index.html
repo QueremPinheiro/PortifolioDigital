@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./style/output.css">
+
+    <title>HOT Burguer - A melhor Hamburgueria do estado</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header style="background-image: url('./imagens/rest.jpg');"
+        class="bg-no-repeat bg-center bg-cover w-full h-[420px]">
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="imagens/logomarca.jpg" alt="logo"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">HOT Burguer</h1>
+            <span class="text-white font-medium">O sabor que você merece!</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg a Dom - 18:00 as 23:00</span>
+            </div>
+
+        </div>
+    </header>
+    <!-- fim Header-->
+
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheca nosso menu</h2>
+
+    <!-- inicio menu -->
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- produto item -->
+            <div class="flex gap-2">
+                <img src="imagens/hamburguer.jpg" alt="hambuguer tradicional"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer clássico da casa</p>
+                    <p class="text-sm">Hambúrguer clássico com suculenta carne bovina grelhada, queijo derretido,
+                        alface, tomate, cebola e molho especial no pão macio.</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 24.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="hambuguer tradicional"
+                            data-price="24.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2">
+                <img src="imagens/hamburguer-2.jpg" alt="hambuguer fried onion"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer fried onion</p>
+                    <p class="text-sm">Hambúrguer suculento com carne bovina grelhada, duplo queijo derretido, cebola
+                        empanada
+                        crocante e molho especial no pão macio.</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 28.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hambúrguer fried onion  "
+                            data-price="28.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2">
+                <img src="imagens/hamburguer-3.jpg" alt="Hambúrguer duplo X"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer duplo X</p>
+                    <p class="text-sm">Hambúrguer com duas camadas suculentas de carne bovina grelhada, queijo
+                        derretido, cebola empanada crocante, picles, alface, tomate e molho especial no pão macio.</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 32.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hambúrguer duplo X"
+                            data-price="32.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2">
+                <img src="imagens/hamburguer-4.jpg" alt="Hambúrguer double chicken"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer double chicken</p>
+                    <p class="text-sm">Hambúrguer Double Chicken com dois filés crocantes de frango empanado, queijo
+                        derretido, alface fresca e molho especial no pão macio.</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 30.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hambúrguer double chicken"
+                            data-price="30.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2">
+                <img src="imagens/batata-frita.jpg" alt="batatas fritas douradas"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Batatas fritas</p>
+                    <p class="text-sm">Porção de batatas fritas crocantes por fora e macias por dentro, douradas na
+                        medida certa e servidas bem quentinhas. Acompanham molho especial para ainda mais sabor. </p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 9.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Batatas fritas douradas"
+                            data-price="9.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2">
+                <img src="imagens/batata-frita-2.jpg" alt="Super fritas"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Super fritas</p>
+                    <p class="text-sm">Porção de batatas fritas crocantes, cobertas com cremoso cheddar derretido e
+                        pedaços crocantes de bacon. Uma combinação irresistível de sabor e textura.</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 15.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Super fritas"
+                            data-price="15.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+        </main>
+
+        <div class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+
+        <!-- grid bebidas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!-- produto item -->
+            <div class="flex gap-2 w-full">
+                <img src="imagens/coca-normal.jpg" alt="coca-latinha"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-cola latinha</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 7.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="coca-latinha"
+                            data-price="7.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2 w-full">
+                <img src="imagens/coca-zero.jpg" alt="coca-zero"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-cola Zero latinha</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 7.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="coca-zero"
+                            data-price="7.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2 w-full">
+                <img src="imagens/fanta-uva.jpg" alt="fanta-uva"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">fanta-uva latinha</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 7.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="fanta-uva"
+                            data-price="7.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+            <!-- produto item -->
+            <div class="flex gap-2 w-full">
+                <img src="imagens/guarana.jpg" alt="guarana"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Fanta-guarana latinha</p>
+
+                    <div class="flex items-center gap-2 mt-3 justify-between">
+                        <P class="font-bold text-lg">R$ 7.90</P>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Fanta-guarana"
+                            data-price="7.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim do item -->
+
+        </div>
+        <!-- fim grid bebidas -->
+
+    </div>
+    <!-- MENU fim -->
+
+    <!-- modal cart -->
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]:">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereco de entrega: </p>
+            <input type="text" placeholder="Digite seu endereco completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-600 hidden" id="address-warn">Digite seu endereco completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- fim modal cart -->
+
+    <!-- BUTTON CARD  FOOTER -->
+    <footer class="w-full bg-orange-600 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <!-- AND BUTTON CARD  FOOTER -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
